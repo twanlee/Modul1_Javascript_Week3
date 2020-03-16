@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0625a92-b747-4c67-8d3d-dcdcef03b144" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Thuc hanh_Dao nguoc cac phan tu trong mang/Thuc hanh_Dao nguoc cac phan tu trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thuc hanh tim gia tri trong mang/Thuc hanh tim gia tri trong mang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aaa/1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Thuc Hanh_Tao va thao tac voi Mang/Thuc hanh_Tap va thao tac voi Mang.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thuc Hanh_Tao va thao tac voi Mang/Thuc hanh_Tap va thao tac voi Mang.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +51,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584263355427</updated>
-      <workItem from="1584263357147" duration="2589000" />
+      <workItem from="1584263357147" duration="7816000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="686" y="209" key="FileChooserDialogImpl" timestamp="1584324783980">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="686" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1584324783980" />
   </component>
 </project>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành add mảng</title>
+</head>
+<body>
+<input type="text" id="inputValue">
+<label><button type="button" id="add" onclick="addValue()">Add</button></label>
+<label><button type="button" id="show" onclick="displayValue()">Display</button></label>
+<p id="result"></p>
+<script>
+    let x=0;
+    let array=[];
+    function addValue() {
+        array[x] = document.getElementById('inputValue').value;
+        alert('Giá trị :' + array[x] + ' Đã được add tại '+ x);
+        x++;
+        document.getElementById('inputValue').value="";
+    }
+    function displayValue() {
+        let e= "<hr/>";
+        for(let i=0;i<array.length;i++){
+            e+= "Element "+ i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById('result').innerHTML=e;
+
+    }
+</script>
+</body>
+</html>
