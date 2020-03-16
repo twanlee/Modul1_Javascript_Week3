@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<p><b>Từ điển Anh - Việt Pro</b></p>
+<input type="text" id="inputValue"/>
+<input type="button" onclick="search()" value="Dịch"/>
+<p id="result"></p>
+<script>
+    let english = ['I','Can','Do','Everything','Without','Doubt'];
+    let vietnamese = ['Tôi','Có thể','Làm','Mọi thứ','Không','Nghi ngờ'];
+    let x = document.getElementById('inputValue').value;
+    let e ='';
+    let isFound = false;
+    function search() {
+        for(i=0;i<english.length;i++) {
+            if (english[i].toLocaleLowerCase() === document.getElementById('inputValue').value.toLocaleLowerCase()) {
+                e = vietnamese[i];
+                isFound=true;
+                break;
+            }
+        }if(isFound){
+            document.getElementById('result').innerHTML=e;
+        }else {
+            alert('Not found');
+        }
+    }
+</script>
+</body>
+</html>
