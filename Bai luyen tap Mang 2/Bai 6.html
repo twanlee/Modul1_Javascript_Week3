@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replace Symbols</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt('Nhập độ dài mảng'));
+    let text = [];
+    for (i=0;i<a;i++){
+        let value = prompt('Nhập vào phần tử:');
+        text[i]= value;
+    }
+    for( i=0;i<a;i++){
+        if(text[i]==='-'){
+            text[i]='_';
+        }
+    }document.write(text);
+</script>
+</body>
+</html>
