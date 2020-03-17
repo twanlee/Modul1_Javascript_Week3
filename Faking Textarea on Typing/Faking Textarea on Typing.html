@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking Textarea on Typing</title>
+</head>
+<body>
+<center>
+    <h1>Hãy gõ thật chậm</h1>
+    <textarea id="type" onkeypress="typing()"></textarea>
+</center>
+<script>
+    let a = ['T','ô','i',' ','t','h','ậ','t',' ','t','h','ô','n','g',' ','m','i','n','h',' ','!','!','!'];
+    let x='';
+    function typing() {
+        let b = document.getElementById('type').value;
+        let c = b.length;
+        if(c>0){
+            for(i=0;i<c;i++){
+                x=x+a[i];
+                if(c===23){
+                    x='';
+                    document.getElementById('type').value='';
+                }
+            }
+        }document.getElementById('type').value=x;
+        x='';
+        setTimeout("typing()",1);
+    }
+
+</script>
+</body>
+</html>
