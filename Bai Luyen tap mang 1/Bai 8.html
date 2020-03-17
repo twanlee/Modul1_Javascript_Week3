@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp</title>
+</head>
+<body>
+<script>
+    let a = [ 12,22,4,5,6,3,32,87,65,7];
+    let index;
+    for(i=0;i<a.length-1;i++){
+        for(j=i+1;j<a.length;j++){
+            if(a[i]<a[j]){
+                index=a[i];
+                a[i]=a[j];
+                a[j]=index;
+            }
+        }
+    }document.write(a);
+</script>
+</body>
+</html>

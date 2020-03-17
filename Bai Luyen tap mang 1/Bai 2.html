@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lơn nhất</title>
+</head>
+<body>
+<script>
+    let a = [ 12,22,4,5,6,3,32,87,65,7,1];
+    let max = a[0];
+    let index = 0;
+    for(i=0;i<a.length;i++){
+        if(a[i]>max){
+            max=a[i];
+            index=i;
+        }
+    }document.write('The max value is: ' + max + ' at index : ' + index);
+</script>
+</body>
+</html>

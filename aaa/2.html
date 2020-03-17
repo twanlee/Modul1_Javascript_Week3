@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo , thêm mảng</title>
+</head>
+<body>
+<p>Thêm Mảng</p>
+<input type="text" id="inputValue">
+<input type="button" value="Add Value" onclick="add()">
+<input type="button" value="Display Value" onclick="display()">
+<p id="result"></p>
+<script>
+    let x = 0;
+    let array = [];
+    function add() {
+        array[x]=document.getElementById('inputValue').value;
+        alert('Value ' + array[x] + ' at ' + x);
+        x++;
+    }
+    function display() {
+        let text = "<hr/>";
+        for(i=0;i<array.length;i++){
+            text += array[i] + "<br/>";
+        }document.getElementById('result').innerHTML=text;
+
+    }
+</script>
+</body>
+</html>

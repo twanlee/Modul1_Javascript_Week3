@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dictionary</title>
+    <title>Từ điển</title>
 </head>
 <body>
-<p><b>Từ điển Anh - Việt Pro</b></p>
+<p>Từ Điển Anh Viêt Pro</p>
 <input type="text" id="inputValue"/>
-<input type="button" onclick="search()" value="Dịch"/>
+<input type="button" value="Dịch" onclick="dich()">
 <p id="result"></p>
 <script>
     let english = ['I','Can','Do','Everything','Without','Doubt'];
     let vietnamese = ['Tôi','Có thể','Làm','Mọi thứ','Không','Nghi ngờ'];
-    let e ='';
-    let isFound = false;
-    function search() {
+    let e='';
+    let isFound=false;
+    function dich() {
         for(i=0;i<english.length;i++) {
             if (english[i].toLocaleLowerCase() === document.getElementById('inputValue').value.toLocaleLowerCase()) {
                 e = vietnamese[i];
@@ -26,7 +26,9 @@
         }else {
             alert('Not found');
         }
+
     }
+
 </script>
 </body>
 </html>
