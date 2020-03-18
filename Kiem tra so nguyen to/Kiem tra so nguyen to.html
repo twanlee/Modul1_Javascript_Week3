@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<h1>Kiểm tra số nguyên tố</h1>
+<input type="number" id="inputValue" placeholder="Is prime number?">
+<input type="button" value="Check" onclick="isPrime()">
+<script>
+    function isPrime() {
+        let number = document.getElementById('inputValue').value;
+        let flag = 0;
+        if(number>10000){
+            alert('Chọn số nhỏ hơn 10000');
+        }
+        for( i=2; i<number/2; i++){
+            if(number%i===0) {
+                flag = 1;
+                break;
+            }
+        }if(flag===0){
+            alert(number + " Is Prime");
+        }else {
+            alert(number + " Is not Prime");
+        }
+
+    }
+
+</script>
+</body>
+</html>
