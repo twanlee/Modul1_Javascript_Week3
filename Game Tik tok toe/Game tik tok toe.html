@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tik tok toe</title>
+</head>
+<body>
+<h1>Game Play</h1>
+<p id="game"></p>
+<input type="button" value="First Player" onclick="first()"><br/>
+<input type="button" value="Second Player" onclick="second()"><br/>
+<script>
+    let board = [];
+    let data = "";
+    for (let i = 0; i < 3; i++) {
+        board[i] = new Array(".",".",".");
+        data += "<br/>";
+        for (let j = 0; j < 3; j++){
+            data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+        }
+    }
+    document.getElementById('game').innerHTML = data;
+    function first() {
+        let position1 = Number(prompt('Nhập vị trí 1'));
+        let position2 = Number(prompt('Nhập vị trí 2'));
+        text = ' ';
+        if(board[position1][position2]==='.'){
+            board[position1][position2]= 'X';
+        }else {
+            alert('Mời chọn lại');
+            position1 = prompt('Nhập vị trí 1');
+            position2 = prompt('Nhập vị trí 2');
+        }
+        for( i = 0; i < 3; i++){
+            text += "<br/>";
+            for (j=0; j<3; j++){
+                text += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+            }
+        }document.getElementById('game').innerHTML=text;
+    }
+    function second() {
+        let positionx1 = Number(prompt('Nhập vị trí 1'));
+        let positionx2 = Number(prompt('Nhập vị trí 2'));
+        text = ' ';
+        if(board[positionx1][positionx2]==='.'){
+            board[positionx1][positionx2]= 'O';
+        }else {
+            alert('Mời chọn lại');
+            positionx1 = prompt('Nhập vị trí 1');
+            positionx2 = prompt('Nhập vị trí 2');
+        }
+        for( i = 0; i < 3; i++){
+            text += "<br/>";
+            for (j=0; j<3; j++){
+                text += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+            }
+        }document.getElementById('game').innerHTML=text;
+    }
+    function check() {
+
+    }
+</script>
+</body>
+</html>
