@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Years of alive</title>
+</head>
+<body>
+<script>
+    function yeasExisted(year) {
+        if (year > 2020) {
+            alert('Mời nhập lại năm');
+        }
+        let existed = 2020 - year;
+        return existed;
+    }
+    let num = Number(prompt('Mời nhập năm bạn sinh ra'));
+    let old = yeasExisted(num);
+    document.write('Bạn đã sống được ' + old + " năm rồi")
+</script>
+</body>
+</html>
