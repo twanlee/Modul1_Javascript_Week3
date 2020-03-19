@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0625a92-b747-4c67-8d3d-dcdcef03b144" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai tap kiem tra tinh doi xung/Kiem tra tu doi xung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Luyen tap va su dung Ham 2/Bai 9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ung dung quan li san pham/Manage Product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aaa/11.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584263355427</updated>
       <workItem from="1584263357147" duration="93016000" />
-      <workItem from="1584579327769" duration="20902000" />
+      <workItem from="1584579327769" duration="21602000" />
     </task>
     <servers />
   </component>
