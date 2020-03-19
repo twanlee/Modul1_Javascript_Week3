@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0625a92-b747-4c67-8d3d-dcdcef03b144" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Kiem Tra Giua Modul PRE-BOOTCAMP 01/Bai 1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kiem Tra Giua Modul PRE-BOOTCAMP 01/Bai 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kiem Tra Giua Modul PRE-BOOTCAMP 01/Bai 3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kiem Tra Giua Modul PRE-BOOTCAMP 01/Bai 4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Min of arrays/Min of arrays.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kiem Tra Giua Modul PRE-BOOTCAMP 01/Bai 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kiem Tra Giua Modul PRE-BOOTCAMP 01/Bai 1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584263355427</updated>
-      <workItem from="1584263357147" duration="92139000" />
+      <workItem from="1584263357147" duration="93016000" />
+      <workItem from="1584579327769" duration="1804000" />
     </task>
     <servers />
   </component>

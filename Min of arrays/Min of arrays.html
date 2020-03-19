@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min of arrays</title>
+</head>
+<body>
+<script>
+    function minArray(array) {
+        let min = array[0];
+        if(array.length===0){
+            return -1;
+        }
+        for ( i=1; i<array.length; i++){
+            if(min > array[i]){
+                min = array[i];
+            }
+        }return min;
+    }
+
+    let arr1= [3, 5, 1, 8, -3, 7, 8];
+    let min1 = minArray(arr1);
+    document.write(min1 +"<br/>");
+    let arr2= [7, 12, 6, 9, 20, 56, 89];
+    let min2 = minArray(arr2);
+    document.write(min2 +"<br/>");
+    arr3 = [];
+    let min3 = minArray(arr3);
+    document.write(min3 +"<br/>");
+    let arr4= [0, 0, 0, 0, 0, 0];
+    let min4 = minArray(min4);
+    document.write(min4 +"<br/>");
+
+</script>
+</body>
+</html>
