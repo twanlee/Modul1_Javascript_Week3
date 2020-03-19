@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial </title>
+</head>
+<body>
+<input type="number" id="inputValue"/>
+<input type="button" value="Tính giai thừa" onclick="factorialize()"/>
+<script>
+    function factorialize() {
+        let num = Number(document.getElementById('inputValue').value);
+        let result = num;
+        if (num === 0 || num === 1)
+            return 1;
+        while (num > 1) {
+            num--;
+            result *= num;
+        }
+        alert(result);
+    }
+</script>
+</body>
+</html>

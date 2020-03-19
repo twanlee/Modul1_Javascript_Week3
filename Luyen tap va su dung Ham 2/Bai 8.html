@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swap Array</title>
+</head>
+<body>
+<script>
+    function swapArray(arr) {
+        let first = 0;
+        let last = arr.length-1;
+        while (first<last){
+            let a =arr[first];
+            arr[first] = arr[last];
+            arr[last] = a;
+            first++;
+            last--;
+        }return arr;
+    }
+    let length = Number(prompt('Mời nhập độ dài dãy'));
+    let array = [];
+    for( i=0; i<length; i++){
+        let x = Number(prompt('Mời nhập giá trị'));
+        array.push(x);
+    }document.write(swapArray(array));
+</script>
+</body>
+</html>

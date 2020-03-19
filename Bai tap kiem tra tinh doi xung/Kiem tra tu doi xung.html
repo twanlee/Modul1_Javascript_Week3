@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đối xứng</title>
+</head>
+<body>
+<script>
+    function isPalindrome(arr) {
+        if(arr.length<=1) return true;
+        let firstChar = arr[0];
+        let lastChar = arr[arr.length-1];
+        if(firstChar!==lastChar){
+            return false;
+        }else {
+            arr.pop();
+            arr.shift();
+            return isPalindrome(arr);
+        }
+    }
+    let chuoi1 = 'redder';
+    let mang1 =chuoi1.split('');
+    let ketqua = isPalindrome(mang1);
+    document.write(ketqua);
+
+</script>
+</body>
+</html>

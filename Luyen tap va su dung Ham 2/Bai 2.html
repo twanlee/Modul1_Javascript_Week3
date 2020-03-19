@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+</head>
+<body>
+<p>Mời nhập bán kính hình tròn</p>
+<input type="number" id="inputValue"/>
+<input type="button" value="Chu vi" onclick="perimeter()"/>
+<input type="button" value="Diện tich" onclick="square()"/>
+<script>
+    function perimeter() {
+        let a = Number(document.getElementById('inputValue').value);
+        let c = 2*a*Math.PI;
+        alert(c);
+    }
+    function square() {
+        let b = Number(document.getElementById('inputValue').value);
+        let d = Math.pow(b,2)*Math.PI;
+        alert(d);
+    }
+</script>
+</body>
+</html>
