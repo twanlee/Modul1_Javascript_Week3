@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stars</title>
+</head>
+<body>
+<h1>Xem sao giải hạn</h1>
+<p>Mời nhập Sao của bạn</p>
+<input type="text" id="inputValue">
+<input type="button" value="Check" onclick="check()">
+<p id="result"></p>
+<script>
+    function check() {
+        let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let e = '';
+        let isFound = false;
+        for (i = 0; i < array1.length; i++) {
+            if (array1[i].toLocaleLowerCase() === document.getElementById('inputValue').value.toLocaleLowerCase()) {
+                e = array2[i];
+                isFound = true;
+                break;
+            }
+        }
+        if (isFound) {
+            document.getElementById('result').innerHTML = e;
+        } else {
+            alert('Not found');
+        }
+    }
+</script>
+
+</body>
+</html>
