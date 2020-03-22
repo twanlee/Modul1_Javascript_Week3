@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime</title>
+</head>
+<body>
+<script>
+    function isPrime(x) {
+        for(i=2; i<=x; i++){
+                if(x%i===0) {
+                    return false;
+                }
+        }return true;
+    }
+    let a = Number(prompt('Nhập số'));
+    document.write(isPrime(a));
+</script>
+</body>
+</html>

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0625a92-b747-4c67-8d3d-dcdcef03b144" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aaa/11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Manage Product/Manage Product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aaa/12.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game Tik tok toe/Game tik tok toe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Game Tik tok toe/Game tik tok toe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tao ban co Caro don gian/Tao ban co Caro don gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tao ban co Caro don gian/Tao ban co Caro don gian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,9 @@
       <option name="presentableId" value="Default" />
       <updated>1584263355427</updated>
       <workItem from="1584263357147" duration="93016000" />
-      <workItem from="1584579327769" duration="21602000" />
+      <workItem from="1584579327769" duration="24830000" />
+      <workItem from="1584693128060" duration="10471000" />
+      <workItem from="1584878992528" duration="708000" />
     </task>
     <servers />
   </component>

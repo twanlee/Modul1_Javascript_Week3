@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Product</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input type="text" id="inputValue" placeholder="New Product"/>
+<input type="button" value="Add" onclick="addProduct()"/>
+<hr/>
+<h2>Display All Product</h2>
+<table id="table">
+
+</table>
+<script>
+    let productList = [];
+    function addProduct() {
+        let productName= document.getElementById('inputValue').value;
+        productList.push(productName);
+        display();
+    }
+    function getProduct(position) {
+        let productName = productList[position];
+        let productRow = "<tr>"+
+            '<td>' + productName + '</td>'+
+            '<td>'+'<input type="button" value="Edit"/>'+'</td>'+
+            '<td>'+'<input type="button" value="Delete" onclick="deleteProduct()"/>'+'</td>'+
+            '</tr>';
+        return productRow;
+    }
+    function display() {
+        let tableContent = "";
+        for (let i = 0; i < productList.length; i++) {
+            tableContent += getProduct(i);
+        }
+        document.getElementById("table").innerHTML = tableContent;
+    }
+    function deleteProduct(position) {
+        productList.splice(position, 1);
+        display();
+    }
+</script>
+</body>
+</html>

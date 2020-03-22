@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Tik tok toe</title>
 </head>
-<body>
+<body onclick="check()">
 <h1>Game Play</h1>
 <p id="game"></p>
 <input type="button" value="First Player" onclick="first()"><br/>
@@ -23,9 +23,9 @@
     function first() {
         let position1 = Number(prompt('Nhập vị trí 1'));
         let position2 = Number(prompt('Nhập vị trí 2'));
-        text = ' ';
+        let text = ' ';
         if(board[position1][position2]==='.'){
-            board[position1][position2]= 'X';
+            board[position1][position2]= 'x';
         }else {
             alert('Mời chọn lại');
             position1 = prompt('Nhập vị trí 1');
@@ -41,9 +41,9 @@
     function second() {
         let positionx1 = Number(prompt('Nhập vị trí 1'));
         let positionx2 = Number(prompt('Nhập vị trí 2'));
-        text = ' ';
+        let text = ' ';
         if(board[positionx1][positionx2]==='.'){
-            board[positionx1][positionx2]= 'O';
+            board[positionx1][positionx2]= 'o';
         }else {
             alert('Mời chọn lại');
             positionx1 = prompt('Nhập vị trí 1');
@@ -57,7 +57,34 @@
         }document.getElementById('game').innerHTML=text;
     }
     function check() {
-
+        for (i = 0; i < 3; i++) {
+            for (j = 0; j < 3 ; j++) {
+                if (board[i][j] === "x" && board[i + 1][j] === "x" && board[i + 2][j] === "x") {
+                    alert("player 1 Win!")
+                }
+                if (board[i][j] === "x" && board[i][j + 1] === "x" && board[i][j + 2] === "x") {
+                    alert("player 1 Win!")
+                }
+                if (board[i][j] === "x" && board[i + 1][j + 1] === "x" && board[i + 2][j + 2] === "x") {
+                    alert("player 1 Win!")
+                }
+                if (board[i][j] === "x" && board[i - 1][j + 1] === "x" && board[i - 2][j + 2] === "x") {
+                    alert("player 1 Win!")
+                }
+                if (board[i][j] === "o" && board[i + 1][j] === "o" && board[i + 2][j] === "o") {
+                    alert("player 2 Win!")
+                }
+                if (board[i][j] === "o" && board[i][j + 1] === "o" && board[i][j + 2] === "o") {
+                    alert("player 2 Win!")
+                }
+                if (board[i][j] === "o" && board[i + 1][j + 1] === "o" && board[i + 2][j + 2] === "o") {
+                    alert("player 2 Win!")
+                }
+                if (board[i][j] === "o" && board[i - 1][j + 1] === "o" && board[i - 2][j + 2] === "o") {
+                    alert("player 2 Win!")
+                }
+            }
+        }
     }
 </script>
 </body>
