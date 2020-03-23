@@ -24,7 +24,7 @@
         let productName = productList[position];
         let productRow = "<tr>"+
             '<td>' + productName + '</td>'+
-            '<td>'+'<input type="button" value="Edit"/>'+'</td>'+
+            '<td>'+'<input type="button" value="Edit" onclick="editProduct('+position+')"/>'+'</td>'+
             '<td>'+'<input type="button" value="Delete" onclick="deleteProduct()"/>'+'</td>'+
             '</tr>';
         return productRow;
@@ -38,6 +38,10 @@
     }
     function deleteProduct(position) {
         productList.splice(position, 1);
+        display();
+    }
+    function editProduct(position) {
+        productList[position]=prompt("Change product:");
         display();
     }
 </script>
